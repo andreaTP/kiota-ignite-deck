@@ -60,11 +60,10 @@ An OpenAPI definition **can be used by** ... **code generation tools** to genera
 				<section>
 					<section data-markdown>
 						<textarea data-template>
-## The deal
-
 **the best code generator support possible for OpenAPI and JSON Schema features**
 
-<img src="./imgs/meme.jpeg" height="30%" width="30%" style="height: 30%; width: 30%;"/>
+<img src="./imgs/meme.jpeg" height="40%" width="40%" style="height: 40%; width: 40%;"/>
+<br />
 						</textarea>
 					</section>
 				</section>
@@ -97,6 +96,7 @@ call.execute();
             <textarea data-template>
 ## Options - OpenAPI generator
 
+<br />
 <img src="./imgs/openapi-issues.png" height="50%" width="50%" style="height: 50%; width: 50%;"/>
 <br />
 						</textarea>
@@ -108,7 +108,8 @@ call.execute();
             <textarea data-template>
 ## Options - OpenAPI generator
 
-<img src="./imgs/not-official.png" height="50%" width="50%" style="height: 50%; width: 50%;"/>
+<br />
+<img src="./imgs/not-official.png" height="80%" width="80%" style="height: 80%; width: 80%;"/>
 <br />
 						</textarea>
 					</section>
@@ -119,7 +120,8 @@ call.execute();
             <textarea data-template>
 ## Options - OpenAPI generator
 
-<img src="./imgs/frameworks.png" height="50%" width="50%" style="height: 50%; width: 50%;"/>
+<br />
+<img src="./imgs/frameworks.png" height="60%" width="60%" style="height: 60%; width: 60%;"/>
 <br />
 						</textarea>
 					</section>
@@ -130,7 +132,8 @@ call.execute();
             <textarea data-template>
 ## Options - OpenAPI generator
 
-<img src="./imgs/templates.png" height="70%" width="70%" style="height: 70%; width: 70%;"/>
+<br />
+<img src="./imgs/templates.png" height="80%" width="80%" style="height: 80%; width: 80%;"/>
 <br />
 						</textarea>
 					</section>
@@ -185,26 +188,22 @@ call.execute();
             <textarea data-template>
 ## Kiota Experience
 
+***
+###### Java
 ```java
 var adapter = new OkHttpRequestAdapter(new AnonymousAuthenticationProvider());
-
 var client = new PostsClient(adapter);
 
 client.posts().get()
   .thenAccept(allPosts -> {
       System.out.printf("Retrieved %d posts.%n", allPosts.size());
-  })
-  .exceptionally(err -> {
-      System.out.printf("Error: %s%n", err.getMessage());
-      return null;
-  })
-  .join();
+  });
 ```
 ***
 
+###### Python
 ```python
 request_adapter = HttpxRequestAdapter(AnonymousAuthenticationProvider())
-
 client = PostsClient(request_adapter)
 
 all_posts = await client.posts.get()
@@ -241,12 +240,13 @@ print(f"Retrieved {len(all_posts)} posts.")
             <textarea data-template>
 ## Kiota Community
 
+- https://aka/ms/kiota
 - https://github.com/microsoft/kiota
 - https://github.com/microsoft/kiota-java
 - https://github.com/redhat-developer/kiota-java-extra
 
 <br />
-<img src="./imgs/pyramid_team.jpg" height="30%" width="30%" style="height: 30%; width: 30%;"/>
+<img src="./imgs/pyramid_team.jpg" height="20%" width="20%" style="height: 20%; width: 20%;"/>
 						</textarea>
 					</section>
 				</section>
@@ -268,7 +268,7 @@ print(f"Retrieved {len(all_posts)} posts.")
             <textarea data-template>
 ## Kiota Goodies
 
-- Consistent experience across languages: C#, Go, Java, PHP, Python, Ruby, Shell, Swift and Typescript
+- Languages: C#, Go, Java, PHP, Python, Ruby, Shell, Swift and Typescript
 - Reference implementation covering full capabilities of OpenAPI descriptions
 						</textarea>
 					</section>
@@ -281,7 +281,7 @@ print(f"Retrieved {len(all_posts)} posts.")
 
 - Minimizes external dependencies
 - Generate code for only a subset of an OpenAPI description
-- Generates code that enables IDE autocomplete to aid in API resource discovery
+- Generates code that enables IDE autocomplete to aid in API discovery
 						</textarea>
 					</section>
 				</section>
